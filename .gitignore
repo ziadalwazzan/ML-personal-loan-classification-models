@@ -1,0 +1,11 @@
+# MacOS
+.DS_Store
+
+# Python
+__pycache__/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Virtual Environment (as recommended in README)
+venv/
