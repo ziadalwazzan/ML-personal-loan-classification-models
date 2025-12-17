@@ -9,3 +9,7 @@ __pycache__/
 
 # Virtual Environment (as recommended in README)
 venv/
+
+# Model files
+*.pkl
+*.h5

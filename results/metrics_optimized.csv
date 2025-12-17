@@ -1,0 +1,4 @@
+model,accuracy,precision,recall,f1,roc_auc,cv_roc_auc,best_params
+Logistic Regression (Optimized),0.8561111111111112,0.6207605344295992,0.906,0.7367351087619435,0.9484580714285714,0.9557857142857141,"{'C': 1, 'penalty': 'l1', 'solver': 'saga'}"
+Random Forest (Optimized),0.9,0.7457551385165326,0.8345,0.7876356772062294,0.9648069999999999,0.9888829528061225,"{'n_estimators': 200, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 'log2', 'max_depth': None}"
+MLPClassifier (Optimized),0.8877777777777778,0.7337110481586402,0.777,0.754735308402137,0.9506167142857143,0.977713112244898,"{'validation_fraction': 0.15, 'learning_rate_init': 0.001, 'hidden_layer_sizes': (100, 100), 'early_stopping': True, 'alpha': 0.001, 'activation': 'tanh'}"
