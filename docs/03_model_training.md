@@ -49,7 +49,6 @@ flowchart LR
 ### 1. Setup and Data Loading
 
 - Re-run feature engineering pipeline from `02_feature_engineering.ipynb` to get preprocessed variables
-- Load `models/preprocess.pkl` for feature names
 - Verify shapes: `X_train_scaled_res` (56000, 19), `X_test_scaled` (9000, 19)
 
 ### 2. Define Evaluation Framework

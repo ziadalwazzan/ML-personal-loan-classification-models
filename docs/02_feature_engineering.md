@@ -24,13 +24,11 @@ flowchart LR
     subgraph output [Output]
         TrainData[Train Sets]
         TestData[Test Set]
-        Artifacts[Saved Preprocessors]
     end
     
     Raw --> Outlier --> Encode --> Engineer --> Split
     Split --> Scale --> Balance --> TrainData
     Split --> Scale --> TestData
-    Scale --> Artifacts
 ```
 
 ## Implementation Steps
@@ -84,7 +82,6 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 - Apply `StandardScaler` (fit on train, transform both)
 - Store unscaled version for Random Forest
-- Save scaler to `models/preprocess.pkl`
 
 ### Step 7: Class Imbalance Handling
 
@@ -94,14 +91,7 @@ Apply to training data only:
 - Compare with original to show distribution change
 - Expected result: ~50/50 balanced training set
 
-### Step 8: Save Artifacts
-
-Save to `models/` directory:
-
-- `preprocess.pkl` — scaler and encoders
-- Optionally export processed train/test CSVs
-
-### Step 9: Documentation
+### Step 8: Documentation
 
 Final markdown cell summarizing:
 
